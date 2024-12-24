@@ -7,8 +7,6 @@ from display import Display
 WIDTH, HEIGHT = 600, 400
 CELL_SIZE = 20
 BLACK = (0, 0, 0)
-GREEN = (0, 255, 0)
-RED = (255, 0, 0)
 WHITE = (255, 255, 255)
 
 def main():
@@ -59,8 +57,8 @@ def main():
 
         # Draw everything
         display.draw_background(BLACK)
-        display.draw_snake(snake.body, GREEN)
-        display.draw_food(food, RED)
+        display.draw_snake(snake.body)
+        display.draw_food(food)
         display.display_text(f"Score: {score}", (10, 10), WHITE)
         display.update()
 
